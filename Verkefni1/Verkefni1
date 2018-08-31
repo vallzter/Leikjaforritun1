@@ -3,3 +3,16 @@ Verkefni1
 1. Game loopur eru eitt það mikilvægasta í leikjagerð. Inni þeim er allt logic leiksins sem er nánast allur leikurinn. 
 Fyrir utan kannski grafíkina. Game loopa keyrir stöðugt á gameplayinu. Hver keyrsla á loopunni processar innslátt/input usersinn án 
 þess að stöðva leikinn. Uppfærir leikinn og renderar hann. Það fylgir einnig tíma leiksins til að hafa stjórn á hraða leikspilunnar..
+Dæmi um mjög einfalda game loopu:
+//////////////////
+while (true)
+{
+  processInput();
+  update();
+  render();
+}
+//////////////////
+
+2. 
+Flest svona game engine designers eins og Unity eru með innbyggt physics og graphics engine til að leysa þessi vandamál en það er gott að 
+kunna þessar jöfnur sjálfur. 
