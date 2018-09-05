@@ -15,4 +15,61 @@ while (true)
 
 2. 
 Flest svona game engine designers eins og Unity eru með innbyggt physics og graphics engine til að leysa þessi vandamál en það er gott að 
-kunna þessar jöfnur sjálfur. 
+kunna þessar jöfnur sjálfur. Þetta er í rauninni bara að kunna almennar jöfnur í stærðfræði og geta þýtt þær yfir á tölvuleikamál.
+
+Segjum svo að við séum með dæmi um tening og við viljum hreyfa hann með að nota "Up" örina á lyklaborðinu:
+if (Input.GetKey(KeyCode.UpArrow)) {
+     transform.Translate(Vector3.forward * Time.deltaTime);
+}
+Delta time er breyta sem er mikið notuð í tölvuleikagerð og það er í rauninni bara verið að segja. Þegar þú margfaldar með 
+Time.deltaTime þá ertu að segja "ég vil hreyfa þennan hlut 10metra á sec í stað þess að hann hreyfist 10metra per frame.
+
+Tökum dæmi um að byrja með kyrrstæðan hlut sem er 1kg, við bætum við stöðugum krafti af 10newtons og eitt skref á einni sekundu.
+    double t = 0.0;
+    float dt = 1.0f;
+
+    float velocity = 0.0f;
+    float position = 0.0f;
+    float force = 10.0f;
+    float mass = 1.0f;
+
+    while ( t <= 10.0 )
+    {
+        position = position + velocity * dt;
+        velocity = velocity + ( force / mass ) * dt;
+        t += dt;
+    }
+Þá fáum við:
+ t=0:    position = 0      velocity = 0
+    t=1:    position = 0      velocity = 10
+    t=2:    position = 10     velocity = 20
+    t=3:    position = 30     velocity = 30
+    t=4:    position = 60     velocity = 40
+    t=5:    position = 100    velocity = 50
+    og svo framvegis.
+Þannig til að færa hlut í leikjagerð er í rauninni mjög einfalt en það fer nátturulega eftir aðstæðum. Þetta snýst bara um að kunna
+jöfnurnar og skilja tungumálið.
+
+/////////////////////////////////////////////////////////////////////////////
+
+3.Segjum sem svo að við séum með fullt af kubbum á jörðinni og við ætlum að láta kúlu falla á jörðinni og þegar það gerist þá 
+eyðileggjast kubbarnir og hverfa. Detecting a collision þarf að innihalda allavega 2 hluti sem klessa á hvort annað og er inni 
+OnCollisionEnter functioni.
+
+Svo förum við inni scriptið á hlutinum sem á að eyðileggja eitthvað, í þessu tilviki er það bolti sem á að eyðileggja kubba
+using UnityEngine;
+using System.Collections;
+
+public class DestroyCubes : MonoBehaviour
+{
+    void OnCollisionEnter (Collision col)
+    {
+        if(col.gameObject.name == "prop_powerCube")//prop_powerCube eru bara kassarnir sem eiga að eyðileggjast 
+        {
+            Destroy(col.gameObject);//if jafnan er einfaldlega bara þannig ef boltinn lendir á kubbunum þá hverfa þeir
+        }
+    }
+}
+////////////////////////////////////////////////
+
+Valgeir Ingi Þórðarson 
