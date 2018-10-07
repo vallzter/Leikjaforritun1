@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class platform : MonoBehaviour {
 
-    public float kraftHopp = 10f;
+    public float kraftHopp = 10f;//bý til breytuna krafthopp til að láta adalpersonuna hoppa hærra í byrjun
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y <= 0f)
@@ -13,8 +13,8 @@ public class platform : MonoBehaviour {
             if (rb != null)
             {
                 Vector2 velocity = rb.velocity;
-                velocity.y = kraftHopp;
-                rb.velocity = velocity;
+                velocity.y = kraftHopp;//kallar í krafthoppið
+                rb.velocity = velocity;//kallar í rigidbody 
             }
         }                 
     }
