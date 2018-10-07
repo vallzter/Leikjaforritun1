@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-    public Transform target;    
+    public Transform target;    //Bý til breytuna target sem er svo adalpersonan til að fylgja henni
 	void LateUpdate () {
         if (target.position.y > transform.position.y)
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
-            transform.position = newPos;
+            transform.position = newPos;//fylgir adalpersonu eftir staðsetningu
         }
 	}
 
