@@ -1,3 +1,26 @@
 Verkefni 2
 
 Skyrsla
+
+1. Höfundur leikjarins er Valgeir Ingi Þórðarson.
+
+
+2. Lýsing tölvuleiksins er að þú byrjar á botninum og ert að hoppa á platformum til að koma þér sem hæst upp.
+á leiðinni upp eru rauðir platformar en þeir eru taldnir vera "óvinirnir" í þessum leik. Því ef þú lendir á 
+þeim þá taparu og þarft að byrja uppá nýtt. Þessi leikur er talinn vera svona símaleikur og til að eyða tíma
+ef manni leiðist. Engin markmið í leiknum í rauninni. Bara reyna komast sem hæst án þess að detta eða lenda 
+á rauðum platform. Þú notar bara örvatakkana til vinstri og hægri í þessum leik.
+
+3.
+
+4. Ég notaði þetta tutorial við að hjálpa mér að byrja :https://www.youtube.com/watch?v=snpuRV7iQl8
+En eins og sést þá breytti ég kóðanum yfir í mína version.
+
+5. Í þessu tutorial sem ég notaði var bara sýnt í rauninni hvernig ég næ gæanum mínum að hoppa og komast 
+lengra upp. Ég notaði ýmis aðrar leiðir og bjó til minn kóða til að búa til rauðu og slæmu platformana. 
+Og til að gera það þurfti ég að gera Game Over skipun og restart. Viðbætur í leikinn eru augljósar. Ég 
+reyndi eins og sést að láta leikinn tapast og byrja uppá nýtt ef hann dettur útaf main camera. En útaf 
+einhverjum ástæðum þá fékk ég það ekki til að virka. Svo ég einbeitti mér bara að öðrum skipunum og að
+commenta út kóðan. Svo væru næstu skref kannski líka að gera Score counter og start menu. Það er tiltölega 
+auðvelt. Endurbætur væru svo 100% grafík en ég var alveg tómur með camera view svo ég photoshoppaði 
+bara andlitið mitt og bjó til platform til að gera þetta eins original og hægt er.
