@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class vondurplatform : MonoBehaviour {
 
-    Rigidbody2D rb;
-    public float badplatform;
+    Rigidbody2D rb; //Allur kóðinn hér er í rauninni copy paste af platform 
+    public float badplatform; //en í staðin fyrir platform herna þá geri ég badplatform
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,7 +22,8 @@ public class vondurplatform : MonoBehaviour {
             }
             if (rb != null)
             {
-                FindObjectOfType<GameManager>().EndGame();
+                FindObjectOfType<GameManager>().EndGame();//og kalla hérna í EndGame inní GameManagernum og þá kemur Game Over og leikurinn restartast 
+                
             }
         }
     }
