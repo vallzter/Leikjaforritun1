@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour {
     public Camera came;
     
 
-    void Update()
+    void Update()//REYNDI AÐ GERA ÞESSA SKIPUN! En fékk hana ekki til að virka svo hún er useless, en ætla hafa hana með svo þú sjáir að ég hafi reynt.
     {
 
 
