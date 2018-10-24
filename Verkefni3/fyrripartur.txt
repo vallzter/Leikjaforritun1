@@ -1,0 +1,22 @@
+1. Leikjavél er software umhverfi sem er hannað fyrir fólk til að búa til tölvuleiki. Hönnuðir nota leikjavélar til að búa til leiki fyrir leikjatölvur, farsíma og einkatölvur
+. Kjarni leikjavélar inniheldur vanalega rendering engine fyrir 2D og 3D, physics engine, collision detection, hljóð, scripting, animation, artifical intelligence, networking, 
+streaming, og margt annað. Ferli tölvuleikjahönnunar gengur oft fyrir sig eins og endurvinnsla, að endurnýta leikjatölvuna til að búa til öðruvísi leiki eða til að einfalda það að hafa leikinn á fleiri platforms. 
+Flestar leikjavélar eru svo sirka eins en það sem mismunar þeim fer vanalega eftir hvað þú ætlar að gera. T.d. ef þú ætlar að gera leik fyrir farsíma þá er unity mjög góður kostur og hefur verið mest notuð af leikjatölvum í gerð símaleikja. 
+En t.d. ef þú ætlar að gera 3D leik, þá er unity með mjög powerful 3D engine, en er hinsvegar ekki á sama graphic level og unreal engine sem er sterkari þar. Síðan eru kóðunar tungumálin oft mismunandi, eins og Unreal engine notar mest c++ meðan Unity notar mest c# og javascript.
+Þegar valið er um leikjavél þá þarf í rauninni bara að velja vél sem henntar best leiknum sem þú ætlar að hanna.
+
+
+2. 2D er í rauninni bara eins og hreyfandi mynd, notuð er flat praphic eða kallaðir sprites. Sést bara frá einu sjónarhorni.  2D leikur eru oft kallaðir platform leikir
+   útaf þú ert í rauninni alltaf á sama platforminum með sama sjónarhorn.
+
+   2.5D eru 2D leikir sem nota 3D geometry fyrir umhverfið og characters en takmarka spilunina bara í 2D. Myndavélin gæti sýnt hliðarskoðun en persónan hreyfist bara í 2D. Í svona leikjum
+   hefur 3D effectið meira áhrif á visuals heldur en spilunina.
+
+   3D leikir nýta sér 3 dimensional geometry með materials og textures renderað á GameObjectin til að láta lýta út eins og solid umhverfi, persónur og hluti sem eru leikjaheimurinn.
+   3D þýðir að þú getur bætt við dýpt í leikinn og skuggum sem lætur leikinn lýta út eins og hann sé í alvöru að gerast fyrir framan okkur og það er hægt að horfa frá mörgum sjónarhornum.
+ 
+   4D í tölvuleikja gerð getur flækst fyrir mörgum og er ekki eins og margir halda. 4D í tölvuleikjagerð er 3D + tími
+   4D texture þýðir evolving texture, umhverfi og leikurinn sjálfur. Procedural textures eru keyrðir með parameters
+   sem þýðir að þeir geta einnig verið keyrðir af tíma. Og með að láta tíma líða getur textureið og umhverfið breyst.
+   Ef þú beitir þessu í leik, þar sem allt umhverfið, persónur eru að breytast, þróast samkvæmt tíma en einnig útaf aðgerðum þínum
+   inni umhverfinu. Tölvur og consoles höndla þetta svo ég er mjög spenntur að sjá hvort það verði gert eitthvað töff úr þessu.
