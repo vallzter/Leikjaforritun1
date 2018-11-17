@@ -1,1 +1,3 @@
-jdkasdjka
+Leikurinn virkar semsagt að þetta er survival shooter. Ég fylgdi tutorial þannig ég gerði litla sem enga grafík í þessum leik þar sem hann er 3D. Ég hinsvegar breytti animation á byssunni og gaf playernum boozt og hækkaði lífið hans og breytti hud'inu. Annars var þetta dáldið langt tutorial þannig hafði ekkert svaka mikinn tíma á að breyta mikið meira. Ég hugsaði með að þetta verkefni væri í rauninni bara fyrir mig að læra að gera 3D en ekki alveg frá grunni. Þetta var í rauninni undirbúningur fyrir verkefni5 hjá mér sem væri deployable leikur.
+
+Myndband af leiknum og kóði kemur eftir helgi þar sem ég er ekki með verkefnið í þessari tölvu(sjá mail frá mér)
