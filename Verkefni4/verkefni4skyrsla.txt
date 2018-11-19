@@ -4,4 +4,6 @@ lífið hans og breytti hud'inu. Annars var þetta dáldið langt tutorial þann
 að breyta mikið meira. Ég hugsaði með að þetta verkefni væri í rauninni bara fyrir mig að læra að gera 3D en 
 ekki alveg frá grunni. Þetta var í rauninni undirbúningur fyrir verkefni5 hjá mér sem væri deployable leikur.
 
-Myndband af leiknum og kóði kemur eftir helgi þar sem ég er ekki með verkefnið í þessari tölvu(sjá mail frá mér)
+Herna er myndband af leiknum í spilun og umræða um hann(ekki hafa of hátt í myndbandinu hóstaði óvart dáldið hátt)
+
+http://youtu.be/N681SD82DAo?hd=1
